@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Vastra by Anankha</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.png" alt="Vastra by Anankha Logo" class="logo-img">
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Gallery</h1>
+            <p class="page-subtitle">Explore our collections and creations</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="gallery-filters-section">
+        <div class="container">
+            <div class="filters-wrapper">
+                <button class="filter-btn active" data-filter="all">All Works</button>
+                <button class="filter-btn" data-filter="bridal">Bridal Wear</button>
+                <button class="filter-btn" data-filter="ethnic">Ethnic Wear</button>
+                <button class="filter-btn" data-filter="fusion">Fusion Designs</button>
+                <button class="filter-btn" data-filter="collections">Collections</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Masonry Gallery -->
+    <section class="gallery-section">
+        <div class="container-fluid">
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-filter="bridal fade-in-up">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/Bridal Red Lehenga.png" alt="Description" class="w-100">
+                        <div class="gallery-overlay">
+                            <button class="btn-lightbox" data-toggle="lightbox" 
+                                data-caption="Bridal Red Lehenga" 
+                                href="javascript:void(0);">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h5>Bridal Red Lehenga</h5>
+                        <p>Custom bridal wear</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-filter="ethnic fade-in-up">
+                    <div class="gallery-image-wrapper">
+                       <img src="images/Traditional Saree.png" alt="Description" class="w-100">
+                        <div class="gallery-overlay">
+                            <button class="btn-lightbox" data-toggle="lightbox" 
+                                data-caption="Traditional Saree" 
+                                href="javascript:void(0);">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h5>Traditional Saree</h5>
+                        <p>Silk saree with gold embroidery</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-filter="fusion fade-in-up">
+                    <div class="gallery-image-wrapper">
+                       <img src="images/Fusion Kurti.png" alt="Description" class="w-100">
+                        <div class="gallery-overlay">
+                            <button class="btn-lightbox" data-toggle="lightbox" 
+                                data-caption="Fusion Kurti" 
+                                href="javascript:void(0);">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h5>Fusion Kurti</h5>
+                        <p>Modern meets traditional</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-filter="collections fade-in-up">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/Summer Collection.png" alt="Description" class="w-100">
+                        <div class="gallery-overlay">
+                            <button class="btn-lightbox" data-toggle="lightbox" 
+                                data-caption="Summer Collection" 
+                                href="javascript:void(0);">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h5>Summer Collection</h5>
+                        <p>Light and breathable fabrics</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-filter="ethnic fade-in-up">
+                    <div class="gallery-image-wrapper">
+                       <img src="images/Embroidered Anarkali.png" alt="Description" class="w-100">
+                        <div class="gallery-overlay">
+                            <button class="btn-lightbox" data-toggle="lightbox" 
+                                data-caption="Embroidered Anarkali" 
+                                href="javascript:void(0);">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h5>Embroidered Anarkali</h5>
+                        <p>Hand embroidery details</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-filter="bridal fade-in-up">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/Gold Bridal Saree.png" alt="Description" class="w-100">
+                        <div class="gallery-overlay">
+                            <button class="btn-lightbox" data-toggle="lightbox" 
+                                data-caption="Gold Bridal Saree" 
+                                href="javascript:void(0);">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h5>Gold Bridal Saree</h5>
+                        <p>South Indian bridal saree</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item" data-filter="fusion fade-in-up">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/Contemporary Gown.png" alt="Description" class="w-100">
+                        <div class="gallery-overlay">
+                            <button class="btn-lightbox" data-toggle="lightbox" 
+                                data-caption="Contemporary Gown" 
+                                href="javascript:void(0);">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h5>Contemporary Gown</h5>
+                        <p>Modern fusion wear</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item" data-filter="collections fade-in-up">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/Festival Collection.png" alt="Description" class="w-100">
+                        <div class="gallery-overlay">
+                            <button class="btn-lightbox" data-toggle="lightbox" 
+                                data-caption="Festival Collection" 
+                                href="javascript:void(0);">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h5>Festival Collection</h5>
+                        <p>Colorful and vibrant pieces</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 9 -->
+                <div class="gallery-item" data-filter="ethnic fade-in-up">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/Cotton Saree.png" alt="Description" class="w-100">
+                        <div class="gallery-overlay">
+                            <button class="btn-lightbox" data-toggle="lightbox" 
+                                data-caption="Cotton Saree" 
+                                href="javascript:void(0);">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h5>Cotton Saree</h5>
+                        <p>Comfortable daily wear</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 10 -->
+                <div class="gallery-item" data-filter="bridal fade-in-up">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/Bridal Blouse.png" alt="Description" class="w-100">
+                        <div class="gallery-overlay">
+                            <button class="btn-lightbox" data-toggle="lightbox" 
+                                data-caption="Bridal Blouse" 
+                                href="javascript:void(0);">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h5>Bridal Blouse</h5>
+                        <p>Intricately designed blouse</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 11 -->
+                <div class="gallery-item" data-filter="fusion fade-in-up">
+                    <div class="gallery-image-wrapper">
+                       <img src="images/Fusion Saree.png" alt="Description" class="w-100">
+                        <div class="gallery-overlay">
+                            <button class="btn-lightbox" data-toggle="lightbox" 
+                                data-caption="Fusion Saree" 
+                                href="javascript:void(0);">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h5>Fusion Saree</h5>
+                        <p>Traditional with modern twist</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 12 -->
+                <div class="gallery-item" data-filter="collections fade-in-up">
+                    <div class="gallery-image-wrapper">
+                      <img src="images/Evening Collection.png" alt="Description" class="w-100">
+                        <div class="gallery-overlay">
+                            <button class="btn-lightbox" data-toggle="lightbox" 
+                                data-caption="Evening Collection" 
+                                href="javascript:void(0);">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h5>Evening Collection</h5>
+                        <p>Elegant party wear</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-image">
+                <div class="lightbox-placeholder">
+                    <i class="fas fa-image"></i>
+                </div>
+            </div>
+            <div class="lightbox-caption"></div>
+        </div>
+        <button class="lightbox-nav lightbox-prev">&#10094;</button>
+        <button class="lightbox-nav lightbox-next">&#10095;</button>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2>Inspired by Our Work?</h2>
+                    <p>Let's create your perfect custom piece from your favorite designs.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">Vastra by Anakha</h5>
+                    <p class="footer-text">Premium custom stitching and fashion design.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +91 9072 531 234</li>
+                        <li><i class="fas fa-envelope"></i> hello@vastrabyanan.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Vithura, Trivandrum, India</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vastra by Anakha. All rights reserved.</p>
+                <p class="developer-credit">
+    Site Designed & Developed by
+    <a href="https://www.orudesign.in" target="_blank" rel="noopener noreferrer">
+        ORU DESIGN CREATIVE STUDIO
+    </a>
+</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back To Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
